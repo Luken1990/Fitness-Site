@@ -1,0 +1,124 @@
+/*----------------- General styling -----------------*/
+:root {
+  --ten-pixel: 0.625rem;
+  --twenty-pixel: 1.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 16px; */
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*----------------- Main styling -----------------*/
+
+main {
+  height: 100vh;
+  background-image: url(../assets/images/brett-jordan-U2q73PfHFpM-unsplash.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  filter: grayscale(70);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: var(--twenty-pixel) 0;
+}
+
+#contact {
+  background-color: #fff;
+  max-width: 61rem;
+  display: flex;
+  padding: 3.125rem;
+}
+
+.our-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  font-size: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.icons {
+  height: 1.25rem;
+  margin-right: 0.9375rem;
+}
+
+#socials li {
+  margin: 0 0.9375rem 0 0;
+} 
+
+.contact-form {
+  padding: 1.25rem;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'],
+input[type='email'] {
+  border: none;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 0.625rem;
+  margin: var(--ten-pixel) 0;
+  font-size: 0.875rem;
+}
+
+textarea {
+  border: 1px solid rgb(231, 231, 231);
+  padding: 0.625rem;
+}
+
+input[type='submit'] {
+  color: #000;
+  border: 0.0625rem solid rgb(0, 0, 0);
+  margin-top: 3.125rem;
+  padding: var(--ten-pixel) var(--twenty-pixel);
+  background-color: transparent;
+  text-transform: capitalize;
+  margin-top: var(--twenty-pixel);
+}
+
+input[type='submit']:hover,
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #000;
+}
+
+@media screen and (max-width: 620px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem;
+    height: auto;
+  }
+  .contact-form,
+  .our-info {
+    width: auto;
+  }
+  .our-info, .contact-info {
+    margin-bottom: 1.25rem;
+  }
+  h1 {
+    margin: 0 0 1.25rem 0;
+  }
+}
+

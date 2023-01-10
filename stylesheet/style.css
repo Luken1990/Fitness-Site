@@ -1,0 +1,284 @@
+/*----------------- General styling -----------------*/
+:root {
+  --ten-pixel: 0.625rem;
+  --twenty-pixel: 1.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*----------------- Main styling -----------------*/
+
+#hero {
+  height: 100vh;
+  background-image: url(../assets/images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: grayscale(60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  margin: var(--ten-pixel) 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 1.25rem;
+  letter-spacing: 1.25rem;
+}
+
+.btn {
+  padding: var(--ten-pixel) var(--twenty-pixel);
+  background-color: transparent;
+  color: #fff;
+  border: 0.0625rem solid #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* exercise section styling*/
+
+#exercise {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#exercise div {
+  height: 50vh;
+}
+
+#exercise div:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#exercise div:nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#exercise div:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#exercise div:nth-child(4) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+#exercise div:nth-child(5) {
+  grid-area: 3 / 1 / 4 / 2;
+  filter: grayscale(70%);
+}
+#exercise div:nth-child(6) {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  transition: all 0.6s;
+}
+
+.img:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 4rem;
+  margin-bottom: var(--twenty-pixel);
+}
+
+.description {
+  line-height: 1.625rem;
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-bottom: 2.5rem;
+}
+
+.info .btn {
+  color: #000;
+  border: 0.0625rem solid rgb(0, 0, 0);
+}
+
+/* Newsletter section styling*/
+
+#newsletter {
+  height: 75vh;
+  background-image: url(../assets/images/george-pagan-iii-SdNMJcc8xt4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  max-width: 25rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter h4 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: var(--twenty-pixel);
+}
+
+#newsletter P {
+  margin-bottom: var(--twenty-pixel);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'],
+input[type='email'] {
+  border: none;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 5px;
+  margin: var(--ten-pixel) 0;
+  font-size: 14px;
+}
+
+.checkbox {
+  margin: var(--twenty-pixel) 0;
+}
+
+input[type='submit'] {
+  color: #000;
+  border: 0.0625rem solid rgb(0, 0, 0);
+  margin-top: 50px;
+  padding: var(--ten-pixel) var(--twenty-pixel);
+  background-color: transparent;
+  text-transform: capitalize;
+  margin-top: var(--twenty-pixel);
+}
+
+input[type='submit']:hover,
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #000;
+}
+
+/* footer styling */
+
+footer {
+  height: 25vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+  color: #fff;
+  margin-bottom: var(--twenty-pixel);
+}
+
+/* media queries*/
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  /* nav and hero section */
+  * {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  #hero h2 {
+    font-size: 1rem;
+    letter-spacing: 1rem;
+  }
+
+  /* exercise section */
+
+  #exercise {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #exercise div:nth-child(1) {
+    order: 1;
+  }
+  #exercise div:nth-child(2) {
+    order: 2;
+  }
+  #exercise div:nth-child(3) {
+    order: 4;
+  }
+  #exercise div:nth-child(4) {
+    order: 3;
+  }
+  #exercise div:nth-child(5) {
+    order: 5;
+  }
+  #exercise div:nth-child(6) {
+    order: 6;
+  }
+
+  .info {
+    width: 100%;
+    height: 50%;
+  }
+}

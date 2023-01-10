@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheet/blog.css" />
+    <link rel="stylesheet" href="../stylesheet/nav_footer.css" />
+    <title>blog</title>
+  </head>
+  <body>
+    <!-- header element containing the main navigation and social media links -->
+    <header>
+      <nav id="main-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li><a href="./challenges.html">Challenges</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <ul class="socials">
+          <li>
+            <a href="#"><img src="../assets/icons/instagram.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../assets/icons/facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../assets/icons/youtube.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="blog" class="banner">
+        <h1>Blog</h1>
+      </section>
+      <div class="blog-nav">
+        <nav>
+          <ul>
+            <a href="./mylibrary.html">
+              <li>
+                Saved Item
+                <img
+                  id="bookmark"
+                  src="../assets/icons/bookmark-regular.svg"
+                  alt=""
+                />
+                <span id="saved-item">0</span>
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <section id="blog-container">
+        <!-- creating a template -->
+        <!-- <article class="blog-post">
+          <span class="save-btn">Save for later</span>
+          <img src="../assets/images/ginny-rose-stewart-UxkcSzRWM2s-unsplash.jpg" alt="">
+          <div class="info">
+            <h4>title</h4>
+            <p class = description>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem repellat laudantium animi...</p>
+            <p class = 'date'>date</p>
+          </div>
+        </article> -->
+      </section>
+      <section id="comment-section">
+        <h2>Leave us a comment</h2>
+        <p>Let us know which topic you would like us to cover next!</p>
+        <form action="#">
+          <input required id="comments" type="text">
+          <input type='submit'>
+        </form>
+      </section>
+    </main>
+    <script src="../js/blog.js"></script>
+  </body>
+</html>

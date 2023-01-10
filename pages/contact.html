@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheet/nav_footer.css" />
+    <link rel="stylesheet" href="../stylesheet/contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!-- header element containing the main navigation and social media links -->
+    <header>
+      <nav id="main-nav">
+        <ul>
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li><a href="./challenges.html">Challenges</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </ul>
+        <ul class="socials">
+          <li>
+            <a href="#"><img src="../assets/icons/instagram.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../assets/icons/facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../assets/icons/youtube.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main section which contains a form for use to input queries  -->
+    <main>
+      <section id="contact">
+        <div class="our-info">
+          <h1>Get In Touch</h1>
+          <div class="contact-info">
+            <div class="info">
+              <img
+                class="icons"
+                src="../assets/icons/location-dot-solid.svg"
+                alt="Location Icons"
+              />
+              <p>
+                243 Goldhawk Road,<br />
+                Ravenscourt Park<br />
+                London<br />
+                W12 8EU
+              </p>
+            </div>
+            <div class="info">
+              <img
+                class="icons"
+                src="../assets/icons/phone-solid.svg"
+                alt="Location Icons"
+              />
+              <p>+44 20 7946 0634</p>
+            </div>
+            <div class="info">
+              <img
+                class="icons"
+                src="../assets/icons/envelope-solid.svg"
+                alt="Location Icons"
+              />
+              <p>weightlifters@gains.com</p>
+            </div>
+          </div>
+          <div class="socials">
+            <ul id="socials">
+              <li>
+                <a href="#"
+                  ><img src="../assets/icons/instagram-blk.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../assets/icons/facebook-blk.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../assets/icons/youtube-blk.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <textarea
+              name="query"
+              id="query"
+              cols="20"
+              rows="5"
+              placeholder="Enter your text.."
+              required
+            ></textarea>
+            <input
+              onclick="submitQuery()"
+              class="btn"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>
+
+<!-- https://www.fakexy.com/uk-fake-address-generator-london -->
+<!-- https://fakenumber.org/uk/london -->
