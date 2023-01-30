@@ -30,4 +30,6 @@ contains 5 pages:
    - Enter the following: git clone 'https://github.com/Luken1990/finalCapstone.git' then press enter.
    
 3. Open your IDE, navigate to the folder/file.
-4. Run the program enter: npm start 
+4. To start the application open index.html and start live server.
+
+<img src="https://user-images.githubusercontent.com/23103970/215513964-ec82b6be-68cb-4db7-ad0c-c672372d7bdd.png" width="550">
