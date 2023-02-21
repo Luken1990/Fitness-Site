@@ -23,11 +23,11 @@ contains 5 pages:
 ## Installation
 
 1. DownLoad zipped file to your local machine.
-2. Alternatively clone the repository using the follow url: https://github.com/Luken1990/finalCapstone.git
+2. Alternatively clone the repository using the follow url: https://github.com/Luken1990/Fitness-Site.git
 
    - Create a folder in your local machine to clone the repository to.
    - Using using Gitbash / terminal navigate to the folder.
-   - Enter the following: git clone 'https://github.com/Luken1990/finalCapstone.git' then press enter.
+   - Enter the following: git clone 'https://github.com/Luken1990/Fitness-Site.git' then press enter.
    
 3. Open your IDE, navigate to the folder/file.
 4. To start the application open index.html and start live server.
