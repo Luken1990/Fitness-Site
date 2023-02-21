@@ -1,4 +1,4 @@
-# finalCapstone
+# Weight Lifting
 
 
 ##### Table of Contents  
